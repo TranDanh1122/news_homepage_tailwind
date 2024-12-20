@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .mobile_menu i {
+        -webkit-mask: url("../assets/images/icon-menu.svg") no-repeat center;
+        mask: url("../assets/images/icon-menu.svg") no-repeat center;
+      }
+    header[open] .mobile_menu i {
+      -webkit-mask: url("../assets/images/icon-menu-close.svg") no-repeat center;
+      mask: url("../assets/images/icon-menu-close.svg") no-repeat center;
+    }
+    header[open] .overlay,  header[open] nav {
+        display: block;
+    }
+  }
